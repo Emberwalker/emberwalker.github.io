@@ -1,0 +1,1 @@
+{"title": {{page.title | jsonify}}, "date": {{page.date | date: "%b %-d, %Y" | jsonify}}, "toolbar": {% if page.toolbar %}{{page.toolbar | jsonify}}{% else %}"qmb.jpg"{% endif %}, "excerpt": {{page.excerpt | jsonify}}, "post": {{content|jsonify}}}

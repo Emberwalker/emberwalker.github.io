@@ -5,10 +5,13 @@
   <style include="shared-styles"></style>
   <iron-ajax
   url="[[url]]"
-  handle-as="text"
+  handle-as="json"
   on-response="onRecv"
+  last-response="{{ajaxResponse}}"
   id="ajax" verbose="true"></iron-ajax>
-  <div id="response"></div>
+  <h2 class="page-title"><span>[[ajaxResponse.title]]</span></h2>
+  <h5 class="post-metadata"><span>[[ajaxResponse.date]]</span></h5>
+  <div class="paper-font-body" id="postContainer"></div>
 </template>
 <script>
   (function() {
@@ -31,10 +34,19 @@
       },
 
       onRecv: function() {
-        this.$.response.innerHTML = this.$.ajax.lastResponse;
+        this.$.postContainer.innerHTML = this.$.ajax.lastResponse.post;
+        this.fire('toolbar-update', this.$.ajax.lastResponse.toolbar);
+      },
+
+      getToolbar: function() {
+        if (this.$.ajax.lastResponse) {
+          return this.$.ajax.lastResponse.toolbar;
+        } else {
+          return 'qmb.jpg';
+        }
       }
     });
-  })();
+  })(document);
 </script>
 
 </dom-module>
