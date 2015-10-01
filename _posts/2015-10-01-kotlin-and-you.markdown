@@ -92,6 +92,6 @@ jar {
 {% endhighlight %}
 
 ##7. Hackhackhack
-Make a Kotlin class like you would a standard Java one, annotate with @Mod (specifying `modLanguage="kotlin"` just in case) and hack away.
+Use the `idea` or `eclipse` tasks as usual, then make a Kotlin class like you would a standard Java one, annotated with @Mod (specifying `modLanguage="kotlin"` just in case) and hack away.
 
 _fin_
