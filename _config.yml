@@ -16,4 +16,3 @@ defaults:
             path: ""
         values:
             layout: post
-            permalink: /post/:year/:month/:day/:title/
