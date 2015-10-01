@@ -4,6 +4,7 @@ email: arkan@drakon.io
 url: "http://drakon.io" # the base hostname & protocol for your site
 twitter_username: arkember
 github_username:  Emberwalker
+permalink: "/post/:year/:month/:day/:title/"
 
 # Build settings
 markdown: kramdown
@@ -14,7 +15,6 @@ defaults:
     -
         scope:
             path: ""
-            type: posts
+            type: "posts"
         values:
-            layout: post
-            permalink: /post/:year/:month/:day/:title/
+            layout: "post"
