@@ -1,0 +1,40 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="post-card-full">
+<template>
+  <style include="shared-styles"></style>
+  <iron-ajax
+  url="[[url]]"
+  handle-as="text"
+  on-response="onRecv"
+  id="ajax" verbose="true"></iron-ajax>
+  <div id="response"></div>
+</template>
+<script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'post-card-full',
+
+      properties: {
+        url: {
+          type: String,
+          notify: true,
+          observer: "onUpdate"
+        }
+      },
+
+      onUpdate: function() {
+        console.log("UPD: " + this.url);
+        this.$.ajax.generateRequest();
+      },
+
+      onRecv: function() {
+        this.$.response.innerHTML = this.$.ajax.lastResponse;
+      }
+    });
+  })();
+</script>
+
+</dom-module>

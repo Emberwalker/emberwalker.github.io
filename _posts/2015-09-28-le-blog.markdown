@@ -1,0 +1,11 @@
+---
+title:  "Le Blog"
+date:   2015-09-28 20:10:40
+---
+Hullo world. I needed a place to put my insane ramblings, random notes and programming-related tutorials. So this was made. Stuff coming soon includes:
+
+- Kotlin for Forge tutorial
+- Pulsar documentation project
+- Generic Engineering dev diary
+
+...and hopefully moar.

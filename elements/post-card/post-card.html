@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="post-card">
+  <template>
+    <style include="shared-styles"></style>
+    <h2 class="page-title"><span>{{title}}</span></h2>
+    <h5 class="post-metadata"><span>{{date}}</span></h5>
+    <div class="paper-font-body"><content></content>...</div>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+      
+      Polymer({
+        is: 'post-card',
+
+        properties: {
+          title: {
+            type: String,
+            notify: true
+          },
+          date: {
+            type: String,
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>

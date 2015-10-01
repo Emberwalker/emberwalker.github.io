@@ -1,0 +1,5 @@
+_site
+.sass-cache
+
+# because fuck you Windows
+Thumbs.db

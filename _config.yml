@@ -1,0 +1,19 @@
+# Site settings
+title: Arkans Floating Island
+email: arkan@drakon.io
+url: "http://drakon.io" # the base hostname & protocol for your site
+twitter_username: arkember
+github_username:  Emberwalker
+
+# Build settings
+markdown: kramdown
+exclude: ["bower_components/neon-animation/guides"]
+
+# Front Matter
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: post
+            permalink: "/post/:year/:month/:day/:title"
