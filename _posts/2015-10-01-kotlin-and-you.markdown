@@ -3,6 +3,7 @@ layout: post
 date: 2015-10-01
 title: "Kotlin and You"
 toolbar: "woods.jpg"
+icon: "extension"
 ---
 
 I hear people like Kotlin. I don't blame them, it's a nice language to play with. Imagine Java without the junk. Yeah. That. So, can we use it with Forge?
