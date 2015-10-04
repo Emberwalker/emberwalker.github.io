@@ -29,7 +29,7 @@ buildscript {
   }
   dependencies {
     [...]
-    classpath "org.jeybrains.kotlin.kotlin-gradle-plugin:$kotlin_ver"
+    classpath "org.jetbrains.kotlin.kotlin-gradle-plugin:$kotlin_ver"
   }
 }
 {% endhighlight %}
