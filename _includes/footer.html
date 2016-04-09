@@ -1,0 +1,45 @@
+<footer class="site-footer">
+
+  <div class="row">
+    <div class="small-10 small-offset-1 columns">
+
+      <h4>{{ site.title }}</h2>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-4 small-offset-1 columns">
+      <ul class="contact-list">
+        <li>Business: <a href="mailto:arkan@imma.engineer">arkan@imma.engineer</a></li>
+        <li>Personal: <a href="mailto:arkan@drakon.io">arkan@drakon.io</a></li>
+      </ul>
+    </div>
+
+    <div class="small-2 columns">
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+          {% include icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+          {% include icon-twitter.html username=site.twitter_username %}
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="small-4 columns">
+      <p>{{ site.description }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-10 small-offset-1 columns">
+      <p class="footer-footnote">Homepage banner courtesy of NASA (Eagle Nebula); other images are mine unless otherwise noted.</p>
+    </div>
+  </div>
+
+
+</footer>

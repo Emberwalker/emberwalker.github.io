@@ -1,0 +1,62 @@
+// Site-specific customisations
+
+// Header
+.top-bar {
+  background-color: transparent;
+  border-bottom: 1px solid #464646;
+}
+
+.top-bar-background {
+  background-position: center;
+  background-size: cover;
+}
+
+div.top-bar > * > ul {
+  background: transparent;
+}
+
+div.top-bar > * > ul > * {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.top-bar .menu-text {
+  color: $body-font-color;
+}
+
+.top-bar-background .menu-text {
+  color: $black !important;
+}
+
+// Callout
+.callout {
+  background-image: url(/img/hero.png);
+  background-size: cover;
+}
+
+.callout .subheader {
+  color: $body-background;
+  font-size: large;
+}
+
+// Post
+.post-header {
+  margin-top: 1.25em;
+}
+
+.highlight pre {
+  padding: 0.5em;
+}
+
+.highlight code {
+  background-color: transparent;
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid #464646;
+}
+
+.footer-footnote {
+  font-size: x-small;
+}

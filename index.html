@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+  <div class="callout">
+    <div class="row column text-center">
+      <h1>Arkans Blog</h1>
+      <h2 class="subheader">Ramblings, rants and observations.</h2>
+    </div>
+  </div>
+
+<div class="row medium-8 large-7 columns home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
