@@ -10,3 +10,4 @@ github_username:  Emberwalker
 
 # Build settings
 markdown: kramdown
+timezone: Europe/London
